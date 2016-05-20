@@ -9,7 +9,7 @@
    		int dni=0;
    		String nombres= "";
 
-   		String prubas= "";
+   		String prubas2= "";
    		int idempleado= 0;
    		
    		EmpleadoBean empleado = (EmpleadoBean)request.getAttribute("empleado");
