@@ -16,9 +16,13 @@ import daofactories.MySqlDaoFactory;
 
 public class MysqlClienteDAO  extends  MySqlDaoFactory implements ClienteDao {
 
+	
+	
 	@Override
 	public ClienteBean BuscarXDni(String dni) throws Exception {
 		ClienteBean cliente = new ClienteBean();	
+	
+		String nombre;
 		try{
 			Connection con = MySqlDaoFactory.obtenerConexion();
 			Statement stmt = con.createStatement();
